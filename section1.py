@@ -32,7 +32,7 @@ df.groupby('channel').count().visit
 
 #%%
 df.corr()
-
+  
 # %%　まず男性向けメールが配信されたサンプルとメールが配信されなかったサンプルにデータを限定するため、女性向けメールが配信されたデータを削除。
 df2: pd.DataFrame = df[df.segment != 'Womens E-Mail']
 df2.groupby('segment').count().visit
